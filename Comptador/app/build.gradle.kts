@@ -4,6 +4,11 @@ plugins {
 }
 
 android {
+
+    buildFeatures {
+        viewBinding = true
+    }
+
     namespace = "com.ieseljust.pmdm.comptador"
     compileSdk = 33
 

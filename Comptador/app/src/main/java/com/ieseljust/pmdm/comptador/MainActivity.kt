@@ -3,50 +3,48 @@ package com.ieseljust.pmdm.comptador
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
 import android.util.Log
+import com.ieseljust.pmdm.comptador.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
     private var comptador=0
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         // Restaurar el valor del contador si existe un estado guardado
         if (savedInstanceState != null) {
             comptador = savedInstanceState.getInt("comptador", 0)
         }
 
-        // Referencia al TextView
-        val textViewContador = findViewById<TextView>(R.id.textViewComptador)
-
         // Inicializar el TextView con el valor del contador
-        textViewContador.text = comptador.toString()
+        binding.textViewComptador.text = comptador.toString()
 
         // Referencia al botón
-        val btAdd = findViewById<Button>(R.id.btAdd)
-        val btReset = findViewById<Button>(R.id.btReset)
-        val btResta = findViewById<Button>(R.id.btResta)
+        val btAdd = binding.btAdd
+        val btReset = binding.btReset
+        val btResta = binding.btResta
 
         // Asociar una expresión lambda como respuesta al evento Clic sobre el botón
         btAdd.setOnClickListener {
             comptador++
-            textViewContador.text = comptador.toString()
+            binding.textViewComptador.text = comptador.toString()
         }
 
         btResta.setOnClickListener {
             if (comptador > 0){
                 comptador--
             }
-            textViewContador.text = comptador.toString()
+            binding.textViewComptador.text = comptador.toString()
         }
 
         btReset.setOnClickListener {
             comptador = 0
-            textViewContador.text = comptador.toString()
+            binding.textViewComptador.text = comptador.toString()
         }
 
         // Registro de log en onCreate
