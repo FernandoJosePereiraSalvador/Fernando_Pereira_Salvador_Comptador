@@ -41,7 +41,20 @@ companion object {
 
 Aqui tenemos imagenes del resultado de los registros:
 
+<p align="center">
+  <img src="https://github.com/FernandoJosePereiraSalvador/Comptador/blob/main/memoria/imagenes/02/registro1.PNG" alt="Error">
+</p>
+
+<p align="center">
+  <img src="https://github.com/FernandoJosePereiraSalvador/Comptador/blob/main/memoria/imagenes/02/registro2.PNG" alt="Error">
+</p>
+
 # Problema de la pérdida de estado
 La pérdida de estado en Android es un problema que ocurre cuando una actividad se destruye y recrea, lo que puede llevar a la pérdida de datos y estado de la aplicación. Esto sucede, por ejemplo, cuando el sistema Android necesita liberar recursos. Para resolver este problema, podemos usar métodos como onSaveInstanceState() y onRestoreInstanceState() para guardar y restaurar el estado de la actividad cuando sea necesario.
 
-Aqui tenemos una imagen del problema:
+Aqui tenemos una imagen del problema. Este mensaje o parecidos nos aparecera constantemente mientras interactuamos con la aplicación:
+
+<p align="center">
+  <img src="https://github.com/FernandoJosePereiraSalvador/Comptador/blob/main/memoria/imagenes/02/perdida%20estado.PNG" alt="Error">
+</p>
+
