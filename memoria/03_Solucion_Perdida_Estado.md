@@ -1,3 +1,5 @@
+[Volver al índice](https://github.com/FernandoJosePereiraSalvador/Comptador/tree/main#readme)
+
 # Solución
 
 Para solucionar la pérdida de estado, nos tenemos que asegurar de que los datos que necesitamos conservar en nuestra actividad se guarden y se restauren correctamente cuando lo necesitemos. Para esto podemos usar el método onSaveInstanceState() para guardar datos y el método onRestoreInstanceState() para restaurarlos.
