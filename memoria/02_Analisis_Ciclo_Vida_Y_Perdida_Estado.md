@@ -1,3 +1,5 @@
+[Volver al índice](https://github.com/FernandoJosePereiraSalvador/Comptador/tree/main#readme)
+
 # Ciclo de vida
 El ciclo de vida es un conjunto de estados por los que pasa una actividad desde su creación hasta su destrucción. Estos estados son gestionados por el sistema operativo Android y permiten que la aplicación responda adecuadamente a los eventos y a la interacción del usuario.
 
