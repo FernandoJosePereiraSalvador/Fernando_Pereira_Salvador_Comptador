@@ -1,3 +1,5 @@
+[Volver al índice](https://github.com/FernandoJosePereiraSalvador/Comptador/tree/main#readme)
+
 # Ampliación funcionalidad
 
 Ahora veremos como hemos agregado los botones para restar y resetear en el contador.
