@@ -1,3 +1,5 @@
+[Volver al índice](https://github.com/FernandoJosePereiraSalvador/Comptador/tree/main#readme)
+
 # ¿Qué es?
 Es una tecnología desarrollada por Google que permite vincular componentes XML con variables en el código de la aplicación. Esto facilita el acceso a las vistas y permite que las vistas reaccionen de manera dinámica a los cambios en los datos. A diferencia de Data Binding, que mezcla el código de presentación XML con el código de la aplicación, View Binding es más sencillo de usar y no requiere modificaciones en los archivos XML, lo que lo hace menos invasivo.
 
