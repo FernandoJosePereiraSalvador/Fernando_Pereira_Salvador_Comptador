@@ -12,7 +12,12 @@ A continuación se muestran los pasos que se han seguido para implementarlo:
    ```
 2. __Sincronizar el proyecto con este script, para que se generen las clases de vinculación__
    
-  Para ello una vez que realizemos algún cambio en el fichero nos aparecera este mensaje en la parte superior donde tendremos que hacer clic sobre: "Sync now":
+     Para ello una vez que realizemos algún cambio en el fichero nos aparecera este mensaje en la parte superior donde tendremos que hacer clic sobre: "Sync now":
+
+      <p align="center">
+     <img src="https://github.com/FernandoJosePereiraSalvador/Comptador/blob/main/memoria/imagenes/05/sync.PNG" alt="Error">
+     </p
+  
 
 3. __Importar la clase de vinculación en el fichero de la clase que vamos a usar.__
    
@@ -26,7 +31,7 @@ A continuación se muestran los pasos que se han seguido para implementarlo:
 
    Para esto solo tenemos que cambiar la linea de código del SetContentView y añadirle el binding.root que hemos creado en el paso anterior: `setContentView(binding.root)`
 
-6. __Acceder a los elementos de la interficie a traves de este objeto de vinculación
+6. __Acceder a los elementos de la interficie a traves de este objeto de vinculación__
 
    Por último tendremos que cambiar todas las partes de nuestro programa que anteriormente usaban Data Binding.
 
