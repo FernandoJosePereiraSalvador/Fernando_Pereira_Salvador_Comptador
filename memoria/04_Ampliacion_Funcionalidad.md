@@ -69,7 +69,7 @@ Este es el código final del archivo activity_main.xml:
 val btReset = findViewById<Button>(R.id.btReset)
         val btResta = findViewById<Button>(R.id.btResta)
 ```
-3. Se asocia una expresión lambda como respuesta al evento Clic sobre el botón. Usamos setOnClickListener para que cuando el usuario haga clic al botón ejecute la función. En el caso de resetear se asigna 0 a "comptador" y en el caso de restar si el comptador es mayor que 0 se le resta 1 y después de ambas se actualiza el texto del textViewContador
+3. Se asocia una expresión lambda como respuesta al evento Clic sobre el botón. Usamos setOnClickListener para que cuando el usuario haga clic al botón ejecute la función. En el caso de resetear se asigna 0 a "comptador" y en el caso de restar si el comptador es mayor que 0 se le resta 1 (para que no aparezcan números negativos) y después de ambas se actualiza el texto del textViewContador
 ```
         btResta.setOnClickListener {
             if (comptador > 0){
