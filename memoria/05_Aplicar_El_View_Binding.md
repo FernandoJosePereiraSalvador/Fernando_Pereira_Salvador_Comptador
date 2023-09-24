@@ -27,11 +27,11 @@ A continuación se muestran los pasos que se han seguido para implementarlo:
 
 4. __Declarar el objeto (binding) que accedera a esta clase__
    
-   Para ello lo hemos creado en el MainActivity.kt en el onCreate. Para ello hemos usado esta línea: `binding = ActivityMainBinding.inflate(layoutInflater)`
+   Para ello lo hemos creado en el MainActivity.kt en el onCreate. Para ello hemos usado esta línea: `binding = ActivityMainBinding.inflate(layoutInflater)`. Esto crea una conexión entre la interfaz de usuario (definida en activity_main.xml) y la lógica de programación en MainActivity.kt al convertir el diseño XML en una estructura de datos accesible desde el código.
 
 5. __Modificar el SetContentView para añadirlo a la raíz del binding__
 
-   Para esto solo tenemos que cambiar la linea de código del SetContentView y añadirle el binding.root que hemos creado en el paso anterior: `setContentView(binding.root)`
+   Para esto solo tenemos que cambiar la linea de código del SetContentView y añadirle el binding.root que hemos creado en el paso anterior: `setContentView(binding.root)` Esto establece el contenido visual de la pantalla en la raíz del diseño definido en binding, lo que significa que muestra la interfaz de usuario creada a partir del archivo XML en la actividad actual de la aplicación.
 
 6. __Acceder a los elementos de la interficie a traves de este objeto de vinculación__
 
